@@ -36,4 +36,14 @@ public class Deck : MonoBehaviour {
     public void UpdateUI () {
         cardsCountText.text = cards.Count.ToString();
     }
+
+    public void CardsUnlockHandler ( List<SC_Card> cards ) {
+        foreach ( var cardData in cards ) {
+            Card c = Instantiate( cardPrefab, cardContainer.transform );
+            c.cardData = cardData;
+            c.UpdateUI();
+            this.cards.Add( c );
+        }
+        UpdateUI();
+    }
 }

@@ -12,3 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14382c0849a27d641acb194442e3011a, type: 3}
   m_Name: Need C
   m_EditorClassIdentifier: 
+  unlockWeight: 50
+  maxValue: 100
+  startValue: 75
+  unlockedCards:
+  - {fileID: 11400000, guid: 4a7d16e04ebc54c40ae9066a08c1d158, type: 2}
+  - {fileID: 11400000, guid: 4a7d16e04ebc54c40ae9066a08c1d158, type: 2}
+  - {fileID: 11400000, guid: 4a7d16e04ebc54c40ae9066a08c1d158, type: 2}

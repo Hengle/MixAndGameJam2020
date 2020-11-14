@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ea8f8adefb78dc47bc57e6b1a3d8eb2, type: 3}
-  m_Name: CardEffect DecreaseBar
+  m_Name: CardEffect ChangeBarValue
   m_EditorClassIdentifier: 
+  useNeedType: 1
+  useFloatValue: 1
   needType: {fileID: 0}
   floatValue: 0
-  comments: RICHIEDE NeedType E FloatValue

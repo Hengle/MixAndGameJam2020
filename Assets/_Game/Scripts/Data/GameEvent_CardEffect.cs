@@ -9,10 +9,10 @@ public class GameEvent_CardEffect : ScriptableObject
     public bool useNeedType;
     public bool useFloatValue;
 
-    [SerializeField, Space, ShowIf("useNeedType")] private SC_NeedType needType;
+    [SerializeField, Space, ShowIf("useNeedType")] private SC_NeedBar needType;
     [SerializeField, ShowIf("useFloatValue")] private float floatValue;
 
-    public System.Action<SC_NeedType, float> OnInvoke;
+    public System.Action<SC_NeedBar, float> OnInvoke;
 
 
     private List<GameEventListener_CardEffect> listeners = new List<GameEventListener_CardEffect>();
@@ -35,7 +35,7 @@ public class GameEvent_CardEffect : ScriptableObject
         }
     }
 
-    public void Invoke(SC_NeedType needType, float floatValue)
+    public void Invoke(SC_NeedBar needType, float floatValue)
     {
         for (int i = 0; i < listeners.Count; i++)
         {

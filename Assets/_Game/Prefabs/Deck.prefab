@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 8167070442802032255}
   - component: {fileID: 4394411850822412756}
   - component: {fileID: 6896623318315049865}
+  - component: {fileID: 660261518574192504}
   m_Layer: 5
   m_Name: Deck
   m_TagString: Untagged
@@ -255,7 +256,7 @@ RectTransform:
   m_GameObject: {fileID: 8167070442802032253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 6896623318418199094}
   m_Father: {fileID: 0}
@@ -353,3 +354,31 @@ MonoBehaviour:
     - _Target: {fileID: 4394411850822412756}
       _MethodName: Setup
       _PersistentArguments: []
+--- !u!114 &660261518574192504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8167070442802032253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d43d00c018dec4c4b8a35376937aa2e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: c48797f9122f45c47ac3aaf59fb7ae23, type: 2}
+  response:
+    _PersistentCalls:
+    - _Target: {fileID: 4394411850822412756}
+      _MethodName: CardsUnlockHandler
+      _PersistentArguments:
+      - _Type: 14
+        _Int: 0
+        _String: System.Collections.Generic.List`1[[SC_Card, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}

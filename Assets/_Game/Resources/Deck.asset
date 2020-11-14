@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Deck
   m_EditorClassIdentifier: 
   cards:
-  - {fileID: 11400000, guid: cac2aac72b9b5c741a1f8542c1869bef, type: 2}
+  - {fileID: 11400000, guid: fe454ccf65b646340ab46837f3ae73a5, type: 2}
   - {fileID: 11400000, guid: b59428309a0312046a08b006f56ea82d, type: 2}
-  - {fileID: 11400000, guid: cac2aac72b9b5c741a1f8542c1869bef, type: 2}
+  - {fileID: 11400000, guid: fe454ccf65b646340ab46837f3ae73a5, type: 2}
   - {fileID: 11400000, guid: b59428309a0312046a08b006f56ea82d, type: 2}
   - {fileID: 11400000, guid: b59428309a0312046a08b006f56ea82d, type: 2}
-  - {fileID: 11400000, guid: cac2aac72b9b5c741a1f8542c1869bef, type: 2}
+  - {fileID: 11400000, guid: fe454ccf65b646340ab46837f3ae73a5, type: 2}
   - {fileID: 11400000, guid: b59428309a0312046a08b006f56ea82d, type: 2}

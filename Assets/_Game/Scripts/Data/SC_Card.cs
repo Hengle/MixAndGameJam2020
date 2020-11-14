@@ -28,7 +28,7 @@ public class SC_Card : SerializedScriptableObject
         [AssetSelector]
         public GameEvent_CardEffect cardEffect;
         [ShowIf("CheckUseNeedType"), AssetSelector, Required]
-        public SC_NeedType needType;
+        public SC_NeedBar needType;
         [ShowIf("CheckUseFloatValue")]
         public float floatValue;
 

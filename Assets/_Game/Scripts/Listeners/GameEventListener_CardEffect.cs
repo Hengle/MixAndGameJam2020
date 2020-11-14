@@ -4,7 +4,7 @@ using UnityEngine;
 public class GameEventListener_CardEffect : MonoBehaviour
 {
     public GameEvent_CardEffect gameEvent;
-    public UltEvent<SC_NeedType, float> response;
+    public UltEvent<SC_NeedBar, float> response;
 
     private void OnEnable()
     {
@@ -16,7 +16,7 @@ public class GameEventListener_CardEffect : MonoBehaviour
         gameEvent.Unsubscribe(this);
     }
 
-    public void OnInvoke(SC_NeedType needType, float floatValue)
+    public void OnInvoke(SC_NeedBar needType, float floatValue)
     {
         response.Invoke(needType, floatValue);
     }

@@ -30,6 +30,7 @@ public class CustomHorizontalGroupUI : MonoBehaviour {
             var element = activeChildren[ i - 1 ];
 
             float xPos = horizontalSpaceing + (i - 1) * elementWidth + (i - 1) * elementsDistance + elementWidth * .5f - targetWidth*.5f;
+            xPos = -xPos;
             Vector2 targetPos = new Vector2( xPos, self.sizeDelta.y * .5f );
             element.anchoredPosition = Vector2.MoveTowards( element.anchoredPosition, targetPos, Time.unscaledDeltaTime * speed );
             i++;

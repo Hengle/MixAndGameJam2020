@@ -124,7 +124,7 @@ public class Card : MonoBehaviour {
             Activate( true );
         }
         else {
-            //go back to deck
+            cardData.Play();
         }
     }
     #endregion
