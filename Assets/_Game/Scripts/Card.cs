@@ -99,7 +99,8 @@ public class Card : MonoBehaviour {
     }
 
     public void UpdateUI () {
-        image.sprite = cardData.img;
+        if ( image != null )
+            image.sprite = cardData.img;
     }
     #endregion
 

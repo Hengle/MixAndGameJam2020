@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14382c0849a27d641acb194442e3011a, type: 3}
   m_Name: Need B
   m_EditorClassIdentifier: 
+  color: {r: 0.76421267, g: 1, b: 0.39215684, a: 1}
+  startsLocked: 0
+  unlockWeight: 0
+  maxValue: 100
+  startValue: 75
+  unlockedCards: []

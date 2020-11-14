@@ -1,10 +1,13 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using NaughtyAttributes;
 
 [CreateAssetMenu( menuName = "Game/Need", order = 1 )]
 public class SC_NeedBar : ScriptableObject {
-    public float unlockWeight = 0f;
+    public Color color;
+    public bool startsLocked = true;
+    [ShowIf("startsLocked")] public float unlockWeight = 0f;
     public float maxValue = 100f;
     public float startValue = 75f;
 
