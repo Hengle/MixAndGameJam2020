@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 672fe9528d9cb4240b7ae3cda213ce9e, type: 3}
-  m_Name: Card 2
+  m_Name: Card 11
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: a1471691f499638419e214cf23f3541f, type: 2}
+    - {fileID: 11400000, guid: a32e1901af1678448b48363b876943c6, type: 2}
     - {fileID: 11400000, guid: 9e4d2b985c09f584d9244d105cf9bfad, type: 2}
-    - {fileID: 11400000, guid: d5a5d4ebba739b847b3c3f99a7ae4d15, type: 2}
     - {fileID: 11400000, guid: 7992596950c3736489d3cb7c15eb7a5e, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
