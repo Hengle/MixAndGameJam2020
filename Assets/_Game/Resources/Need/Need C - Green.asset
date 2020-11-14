@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14382c0849a27d641acb194442e3011a, type: 3}
+  m_Name: Need C - Green
+  m_EditorClassIdentifier: 
+  color: {r: 0.5248922, g: 0.8490566, b: 0.48517516, a: 1}
+  startsLocked: 1
+  unlockWeight: 5
+  maxValue: 100
+  startValue: 75
+  unlockedCards:
+  - {fileID: 11400000, guid: eb91f8dd6163a284abc5e932c8c8c720, type: 2}
+  - {fileID: 11400000, guid: 1d7a420547c1e194ab518357c9e39226, type: 2}
+  - {fileID: 11400000, guid: 5ee53db4bcd61024b9f2b911226eb812, type: 2}
+  - {fileID: 11400000, guid: b42633e0f63086e4185ca5946931a5a2, type: 2}

@@ -7,8 +7,10 @@ using Deirin.Utilities;
 [CreateAssetMenu(fileName = "Card 0", menuName = "Game/Card", order = 1)]
 public class SC_Card : SerializedScriptableObject
 {
-    [Space, AssetSelector]
+    [Space, AssetSelector, PreviewField]
     public Sprite img;
+
+    public int weight = 1;
 
     [Space]
     public List<Effect> effects = new List<Effect>();

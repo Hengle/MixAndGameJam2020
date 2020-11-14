@@ -9,15 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62ceb6ee19d70624ab6d46b455fb0ed4, type: 3}
-  m_Name: Deck
+  m_Script: {fileID: 11500000, guid: 14382c0849a27d641acb194442e3011a, type: 3}
+  m_Name: Need B - Yellow
   m_EditorClassIdentifier: 
-  cards:
-  - {fileID: 11400000, guid: b59428309a0312046a08b006f56ea82d, type: 2}
-  - {fileID: 11400000, guid: 71ba45ed3cf3c514a91566d64f70760e, type: 2}
-  - {fileID: 11400000, guid: d05be6659d9679c4c9631a91e51a5cd8, type: 2}
-  - {fileID: 11400000, guid: 44aaf91b10f24b74d987c383eec8980d, type: 2}
-  - {fileID: 11400000, guid: b264392091be7e84d9065d8177dc75d2, type: 2}
+  color: {r: 0.9880972, g: 1, b: 0.39215684, a: 1}
+  startsLocked: 0
+  unlockWeight: 0
+  maxValue: 100
+  startValue: 75
+  unlockedCards:
   - {fileID: 11400000, guid: 76ce8c321520984479fdb24a54a0fac2, type: 2}
   - {fileID: 11400000, guid: beb19a16d33b1df40b89d27fc9219530, type: 2}
   - {fileID: 11400000, guid: 7bb48a638002b0147bd511f929f8499d, type: 2}
+  - {fileID: 11400000, guid: b264392091be7e84d9065d8177dc75d2, type: 2}

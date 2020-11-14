@@ -10,16 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 672fe9528d9cb4240b7ae3cda213ce9e, type: 3}
-  m_Name: Card 3
+  m_Name: Card - B_ACDEF
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: a1471691f499638419e214cf23f3541f, type: 2}
+    - {fileID: 11400000, guid: d5a5d4ebba739b847b3c3f99a7ae4d15, type: 2}
     - {fileID: 11400000, guid: 9e4d2b985c09f584d9244d105cf9bfad, type: 2}
     - {fileID: 11400000, guid: a32e1901af1678448b48363b876943c6, type: 2}
     - {fileID: 11400000, guid: 7992596950c3736489d3cb7c15eb7a5e, type: 2}
+    - {fileID: 11400000, guid: 37470ba9530e8e948a15149670b4f9fe, type: 2}
+    - {fileID: 11400000, guid: 12935e9c8ba1b4d4d97e15f9fe9b9f06, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -31,7 +34,7 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 6
     - Name: 
       Entry: 7
       Data: SC_Card+Effect, Assembly-CSharp
@@ -58,7 +61,7 @@ MonoBehaviour:
       Data: 2
     - Name: floatValue
       Entry: 4
-      Data: -15
+      Data: -5
     - Name: 
       Entry: 8
       Data: 
@@ -73,7 +76,52 @@ MonoBehaviour:
       Data: 3
     - Name: floatValue
       Entry: 4
-      Data: -15
+      Data: -5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: SC_Card+Effect, Assembly-CSharp
+    - Name: cardEffect
+      Entry: 10
+      Data: 0
+    - Name: needType
+      Entry: 10
+      Data: 4
+    - Name: floatValue
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: SC_Card+Effect, Assembly-CSharp
+    - Name: cardEffect
+      Entry: 10
+      Data: 0
+    - Name: needType
+      Entry: 10
+      Data: 5
+    - Name: floatValue
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: SC_Card+Effect, Assembly-CSharp
+    - Name: cardEffect
+      Entry: 10
+      Data: 0
+    - Name: needType
+      Entry: 10
+      Data: 6
+    - Name: floatValue
+      Entry: 4
+      Data: -5
     - Name: 
       Entry: 8
       Data: 
@@ -83,4 +131,5 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  img: {fileID: 21300000, guid: d1ea9043586001c41800d536c22f425c, type: 3}
+  img: {fileID: 21300000, guid: 4a0cb101304f771448ce202bf79633d0, type: 3}
+  weight: 1

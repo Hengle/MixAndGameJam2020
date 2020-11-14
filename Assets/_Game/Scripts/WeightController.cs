@@ -10,4 +10,5 @@ public class WeightController : MonoBehaviour {
     private void OnDisable () => weight.OnValueChanged -= OnValueChanged.Invoke;
 
     public void Add ( float value ) => weight.Value += value;
+    public void Add(Card card) => weight.Value += card.cardData.weight;
 }

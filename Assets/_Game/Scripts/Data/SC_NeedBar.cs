@@ -2,15 +2,17 @@
 using UnityEngine;
 using System.Linq;
 using NaughtyAttributes;
+using Sirenix.OdinInspector;
 
 [CreateAssetMenu( menuName = "Game/Need", order = 1 )]
 public class SC_NeedBar : ScriptableObject {
     public Color color;
     public bool startsLocked = true;
-    [ShowIf("startsLocked")] public float unlockWeight = 0f;
+    [NaughtyAttributes.ShowIf("startsLocked")] public float unlockWeight = 0f;
     public float maxValue = 100f;
     public float startValue = 75f;
 
+    [AssetSelector]
     public List<SC_Card> unlockedCards = new List<SC_Card>();
 
     public static List<SC_NeedBar> GetAllNeed () {

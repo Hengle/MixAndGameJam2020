@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14382c0849a27d641acb194442e3011a, type: 3}
-  m_Name: Need C
+  m_Name: Need D - Cyan
   m_EditorClassIdentifier: 
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.4401795, g: 0.8247549, b: 0.8396226, a: 1}
   startsLocked: 1
-  unlockWeight: 0
+  unlockWeight: 20
   maxValue: 100
   startValue: 75
-  unlockedCards: []
+  unlockedCards:
+  - {fileID: 11400000, guid: e5fa300f4d41e9446beed6282b540de5, type: 2}
+  - {fileID: 11400000, guid: 1a78cdb4c36448a4ca3a82de12b44176, type: 2}
+  - {fileID: 11400000, guid: e689e394372087d4b85c01f0a98b9ab6, type: 2}
+  - {fileID: 11400000, guid: e85cf5d01c6d9d6478180fae31c4b1c8, type: 2}
