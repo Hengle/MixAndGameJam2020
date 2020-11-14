@@ -23,17 +23,27 @@ public class NeedBar : MonoBehaviour {
 
     private void Start () {
         fillImage.color = needData.color;
+        fillImage.fillAmount = 0f;
 
         if ( needData.startsLocked )
             Lock();
+        else
+            GoToStartValue();
+    }
 
+    private void GoToStartValue () {
         currentValue = needData.startValue;
-        OnValueChangePercent.Invoke( currentValue / needData.maxValue );
+        float percent = currentValue / needData.maxValue;
+
+        fillImage.DOFillAmount( percent, fillSpeed ).SetSpeedBased().Play();
+
+        OnValueChangePercent.Invoke( percent );
     }
 
     public void Unlock () {
         locked = false;
         OnUnlock.Invoke( needData.unlockedCards );
+        GoToStartValue();
     }
 
     public void Lock () {
@@ -46,7 +56,7 @@ public class NeedBar : MonoBehaviour {
         float percent = Mathf.Clamp01( currentValue / needData.maxValue );
         OnValueChangePercent.Invoke( percent );
 
-        fillImage.DOFillAmount( percent, fillSpeed ).SetSpeedBased();
+        fillImage.DOFillAmount( percent, fillSpeed ).SetSpeedBased().Play();
 
         if ( percent <= 0 ) {
             OnBarEmpty.Invoke();

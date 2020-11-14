@@ -1082,10 +1082,10 @@ MonoBehaviour:
     - _Target: {fileID: 1085385962}
       _MethodName: Add
       _PersistentArguments:
-      - _Type: 5
+      - _Type: 14
         _Int: 0
-        _String: 
-        _X: 10
+        _String: Card, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        _X: 0
         _Y: 0
         _Z: 0
         _W: 0
@@ -2086,7 +2086,7 @@ RectTransform:
   m_GameObject: {fileID: 1999610603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2039817658}
   - {fileID: 1355021968}

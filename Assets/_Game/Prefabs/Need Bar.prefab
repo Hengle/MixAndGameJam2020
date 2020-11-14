@@ -147,7 +147,7 @@ MonoBehaviour:
   fillImage: {fileID: 2966222154143802424}
   locked: 0
   currentValue: 0
-  fillSpeed: 5
+  fillSpeed: 2.5
   OnValueChangePercent:
     _PersistentCalls: []
   OnUnlock:
