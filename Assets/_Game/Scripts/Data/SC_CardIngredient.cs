@@ -28,7 +28,7 @@ public class SC_CardIngredient : SerializedScriptableObject
     public TypeOfCookingEnum EvaluateCooking(float value)
     {
         if (value < timeBeforeUnderdone) 
-            return TypeOfCookingEnum.row;
+            return TypeOfCookingEnum.raw;
         if (value < timeBeforeWelldone) 
             return TypeOfCookingEnum.underdone;
         if (value < timeBeforeBurnt) 
