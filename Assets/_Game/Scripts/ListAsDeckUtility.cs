@@ -56,4 +56,16 @@ public static class ListAsDeckUtility {
     }
 
 
+    public static void InsertInRandomPosition<T>(this List<T> targetList, List<T> cards, int firstCardPosition = 0)
+    {
+        if (targetList != null && cards != null)
+        {
+            for(int i = 0; i < cards.Count; i++)
+            {
+                targetList.InsertInRandomPosition(cards[i], firstCardPosition);
+            }
+        }
+    }
+
+
 }
