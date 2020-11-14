@@ -11,14 +11,15 @@
         public bool active { get; private set; }
 
         public void Setup () {
-            for ( int i = 0; i < Behaviours.Length; i++ ) {
-                Behaviours[i].Setup( this );
-            }
+            if ( Behaviours != null )
+                for ( int i = 0; i < Behaviours.Length; i++ ) {
+                    Behaviours[i].Setup( this );
+                }
             active = true;
             CustomSetup();
             OnSetup.Invoke();
-        }        
-        
+        }
+
         public void SetupWithFetch () {
             FetchBehaviours();
             for ( int i = 0; i < Behaviours.Length; i++ ) {
