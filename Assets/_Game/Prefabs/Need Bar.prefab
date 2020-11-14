@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 30
---- !u!1 &7734402416829731574
+--- !u!1 &2265367155914030169
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,107 +100,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7734402416829731573}
-  - component: {fileID: 7734402416829731572}
-  - component: {fileID: 2039817660}
-  - component: {fileID: 317669951545350489}
-  m_Layer: 5
-  m_Name: Need Bar
+  - component: {fileID: 4977490654912776515}
+  - component: {fileID: 4922372860384592569}
+  m_Layer: 0
+  m_Name: Card Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7734402416829731573
-RectTransform:
+--- !u!4 &4977490654912776515
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7734402416829731574}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 2265367155914030169}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3679180935161857313}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Children: []
+  m_Father: {fileID: 7885535937923918511}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7734402416829731572
+--- !u!114 &4922372860384592569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7734402416829731574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dffc530739fbfd5428fae63e8917c09e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  needData: {fileID: 11400000, guid: 9e4d2b985c09f584d9244d105cf9bfad, type: 2}
-  fillImage: {fileID: 2966222154143802424}
-  locked: 0
-  currentValue: 0
-  fillSpeed: 2.5
-  OnValueChangePercent:
-    _PersistentCalls: []
-  OnUnlock:
-    _PersistentCalls:
-    - _Target: {fileID: 1968583963853972795}
-      _MethodName: SetActive
-      _PersistentArguments:
-      - _Type: 1
-        _Int: 1
-        _String: 
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-    - _Target: {fileID: 11400000, guid: c48797f9122f45c47ac3aaf59fb7ae23, type: 2}
-      _MethodName: Invoke
-      _PersistentArguments:
-      - _Type: 14
-        _Int: 0
-        _String: System.Collections.Generic.List`1[[SC_Card, Assembly-CSharp, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-  OnLock:
-    _PersistentCalls:
-    - _Target: {fileID: 1968583963853972795}
-      _MethodName: SetActive
-      _PersistentArguments:
-      - _Type: 1
-        _Int: 0
-        _String: 
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-  OnBarEmpty:
-    _PersistentCalls:
-    - _Target: {fileID: 11400000, guid: e389773ba5cadaf4cac1c06bded1c8e6, type: 2}
-      _MethodName: Invoke
-      _PersistentArguments: []
---- !u!114 &2039817660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7734402416829731574}
+  m_GameObject: {fileID: 2265367155914030169}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8103550fe68af9a47bf089c033b925de, type: 3}
@@ -228,6 +157,206 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+--- !u!1 &5849249037604301684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7885535937923918511}
+  m_Layer: 0
+  m_Name: Listeners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7885535937923918511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849249037604301684}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8975478450648458528}
+  - {fileID: 4977490654912776515}
+  m_Father: {fileID: 7734402416829731573}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7344292552725547810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8975478450648458528}
+  - component: {fileID: 2034018250499917031}
+  m_Layer: 0
+  m_Name: Need Bar Unlock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8975478450648458528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7344292552725547810}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7885535937923918511}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2034018250499917031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7344292552725547810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75fc973aff8c5584a856a97e66da182d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 29cf3fa6c8192be4eb94888efc560d91, type: 2}
+  response:
+    _PersistentCalls:
+    - _Target: {fileID: 7734402416829731572}
+      _MethodName: BarUnlockHandler
+      _PersistentArguments:
+      - _Type: 14
+        _Int: 0
+        _String: NeedBar, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+--- !u!1 &7734402416829731574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7734402416829731573}
+  - component: {fileID: 7734402416829731572}
+  - component: {fileID: 317669951545350489}
+  m_Layer: 5
+  m_Name: Need Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7734402416829731573
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7734402416829731574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3679180935161857313}
+  - {fileID: 7885535937923918511}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7734402416829731572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7734402416829731574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffc530739fbfd5428fae63e8917c09e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needData: {fileID: 11400000, guid: 9e4d2b985c09f584d9244d105cf9bfad, type: 2}
+  fillImage: {fileID: 2966222154143802424}
+  locked: 0
+  currentValue: 0
+  fillSpeed: 2.5
+  OnUnlock:
+    _PersistentCalls:
+    - _Target: {fileID: 1968583963853972795}
+      _MethodName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 11400000, guid: c48797f9122f45c47ac3aaf59fb7ae23, type: 2}
+      _MethodName: Invoke
+      _PersistentArguments:
+      - _Type: 14
+        _Int: 0
+        _String: System.Collections.Generic.List`1[[SC_Card, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 11400000, guid: 29cf3fa6c8192be4eb94888efc560d91, type: 2}
+      _MethodName: Invoke
+      _PersistentArguments:
+      - _Type: 13
+        _Int: 0
+        _String: NeedBar, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 7734402416829731572}
+  OnLock:
+    _PersistentCalls:
+    - _Target: {fileID: 1968583963853972795}
+      _MethodName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+  OnBarEmpty:
+    _PersistentCalls:
+    - _Target: {fileID: 11400000, guid: e389773ba5cadaf4cac1c06bded1c8e6, type: 2}
+      _MethodName: Invoke
+      _PersistentArguments: []
 --- !u!114 &317669951545350489
 MonoBehaviour:
   m_ObjectHideFlags: 0

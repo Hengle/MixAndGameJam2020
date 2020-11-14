@@ -16,7 +16,6 @@ public class NeedBar : MonoBehaviour {
     public float fillSpeed = 5f;
 
     [Header("Events")]
-    public UltEvent<float> OnValueChangePercent;
     public UltEvent<List<SC_Card>> OnUnlock;
     public UltEvent OnLock;
     public UltEvent OnBarEmpty;
@@ -33,11 +32,7 @@ public class NeedBar : MonoBehaviour {
 
     private void GoToStartValue () {
         currentValue = needData.startValue;
-        float percent = currentValue / needData.maxValue;
-
-        fillImage.DOFillAmount( percent, fillSpeed ).SetSpeedBased().Play();
-
-        OnValueChangePercent.Invoke( percent );
+        UpdateUI();
     }
 
     public void Unlock () {
@@ -53,14 +48,16 @@ public class NeedBar : MonoBehaviour {
 
     public void Add ( float value ) {
         currentValue += value;
-        float percent = Mathf.Clamp01( currentValue / needData.maxValue );
-        OnValueChangePercent.Invoke( percent );
+        UpdateUI();
 
-        fillImage.DOFillAmount( percent, fillSpeed ).SetSpeedBased().Play();
-
-        if ( percent <= 0 ) {
+        if ( currentValue / needData.maxValue <= 0 ) {
             OnBarEmpty.Invoke();
         }
+    }
+
+    public void UpdateUI () {
+        float percent = currentValue / needData.maxValue;
+        fillImage.DOFillAmount( percent, fillSpeed ).SetSpeedBased().Play();
     }
 
     public void CardEffectValueChangeHanlder ( SC_NeedBar needData, float amount ) {
@@ -75,5 +72,11 @@ public class NeedBar : MonoBehaviour {
 
         if ( value >= needData.unlockWeight )
             Unlock();
+    }
+
+    public void BarUnlockHandler ( NeedBar needBar ) {
+        if ( needBar != this ) {
+            currentValue = Mathf.Lerp( currentValue, needData.startValue, needData.softResetLerpPercent );
+        }
     }
 }
