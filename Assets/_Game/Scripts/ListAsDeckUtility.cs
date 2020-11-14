@@ -50,12 +50,13 @@ public static class ListAsDeckUtility
 	}
 
 
-	public static T Draw<T>(this List<T> targetList) where T : Object 
+	public static T Draw<T>(this List<T> targetList, bool removeFromList = true) where T : Object 
 	{
 		if(targetList != null && targetList.Count > 0)
 		{
 			T tmp = targetList[0];
-			targetList.RemoveAt(0);
+			if(removeFromList)
+				targetList.RemoveAt(0);
 			return tmp;
 		}
 		else
