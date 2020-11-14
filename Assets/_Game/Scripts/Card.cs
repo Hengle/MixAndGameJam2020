@@ -45,11 +45,11 @@ public class Card : MonoBehaviour {
         if ( active == false )
             return;
 
-        down = true;
-        up = false;
-
         if ( selected )
             Use();
+
+        down = true;
+        up = false;
     }
 
     public void Up () {
@@ -125,6 +125,7 @@ public class Card : MonoBehaviour {
         }
         else {
             cardData.Play();
+            Activate( false );
         }
     }
     #endregion

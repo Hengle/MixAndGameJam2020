@@ -11,15 +11,17 @@ public class Gameplay : MonoBehaviour {
     public UltEvent OnDrawRoutineEnd;
 
     public void Draw () {
-        deck.cards.Draw().transform.SetParent( hand.transform );
+        Card c = deck.cards.Draw();
+        c.transform.SetParent( hand.transform );
+        c.Activate( true );
+
         deck.UpdateUI();
     }
 
     public void Draw ( int amount ) {
         for ( int i = 0; i < amount; i++ ) {
-            deck.cards.Draw()?.transform.SetParent( hand.transform );
+            Draw();
         }
-        deck.UpdateUI();
     }
 
     public void Draw ( int amount, float delay ) {
@@ -36,8 +38,7 @@ public class Gameplay : MonoBehaviour {
 
     private IEnumerator DrawRoutine ( int amount, float delay ) {
         for ( int i = 0; i < amount; i++ ) {
-            deck.cards.Draw()?.transform.SetParent( hand.transform );
-            deck.UpdateUI();
+            Draw();
             yield return new WaitForSeconds( delay );
         }
         OnDrawRoutineEnd.Invoke();
