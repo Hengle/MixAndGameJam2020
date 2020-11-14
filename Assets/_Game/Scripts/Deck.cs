@@ -1,16 +1,39 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using NaughtyAttributes;
 
 public class Deck : MonoBehaviour {
-    public List<Card> cards = new List<Card>();
+    [Header("Refs")]
+    public SC_Deck deckData;
+    public Card cardPrefab;
+    public TextMeshProUGUI cardsCountText;
+    public Transform cardContainer;
 
-    public bool selected { get; set; }
+    [ReadOnly] public List<Card> cards = new List<Card>();
+
+    public void Setup () {
+        foreach ( var cardData in deckData.cards ) {
+            Card c = Instantiate( cardPrefab, cardContainer.transform );
+            c.cardData = cardData;
+            c.UpdateUI();
+            cards.Add( c );
+        }
+        UpdateUI();
+    }
 
     public void Add ( Card card ) {
-        cards.Add( card );
+        card.transform.position = cardContainer.transform.position;
+        card.transform.SetParent( cardContainer.transform );
+        UpdateUI();
     }
 
     public void Remove ( Card card ) {
         cards.Remove( card );
+        UpdateUI();
+    }
+
+    public void UpdateUI () {
+        cardsCountText.text = cards.Count.ToString();
     }
 }

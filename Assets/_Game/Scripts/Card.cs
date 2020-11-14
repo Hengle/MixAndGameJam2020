@@ -1,8 +1,13 @@
 ﻿using UltEvents;
 using UnityEngine;
 using NaughtyAttributes;
+using UnityEngine.UI;
 
 public class Card : MonoBehaviour {
+    [Header("Refs")]
+    public SC_Card cardData;
+    public Image image;
+
     [Header("Events")]
     public UltEvent<Card> OnSelection;
     public UltEvent<Card> OnDeselection;
@@ -89,7 +94,12 @@ public class Card : MonoBehaviour {
     }
 
     public void Use () {
+        selected = false;
         OnUse.Invoke( this );
+    }
+
+    public void UpdateUI () {
+        image.sprite = cardData.img;
     }
     #endregion
 

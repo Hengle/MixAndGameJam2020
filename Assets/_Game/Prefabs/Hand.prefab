@@ -55,7 +55,7 @@ MonoBehaviour:
   elementsDistance: 90
   elementWidth: 70
   horizontalSpaceing: 10
-  speed: 500
+  speed: 2000
 --- !u!114 &1855303161
 MonoBehaviour:
   m_ObjectHideFlags: 0

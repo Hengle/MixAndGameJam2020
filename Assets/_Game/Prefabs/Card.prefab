@@ -461,6 +461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a20e315351a9d164faf4f1fee068b514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardData: {fileID: 0}
+  image: {fileID: 966521342107683423}
   OnSelection:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 90bb001243f0f90428ab09f3a33a8dd5, type: 2}

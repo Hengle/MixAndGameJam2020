@@ -237,6 +237,8 @@ GameObject:
   - component: {fileID: 8167070442802032249}
   - component: {fileID: 8167070442802032254}
   - component: {fileID: 8167070442802032255}
+  - component: {fileID: 4394411850822412756}
+  - component: {fileID: 6896623318315049865}
   m_Layer: 5
   m_Name: Deck
   m_TagString: Untagged
@@ -317,3 +319,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 30
+--- !u!114 &4394411850822412756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8167070442802032253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f030695ba54e43b4fb373fd5130aa3e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckData: {fileID: 11400000, guid: f0f59e9fd3f8da54f91c3ae797236d03, type: 2}
+  cardPrefab: {fileID: 7810906322047351729, guid: 76d2c5b4c7f097a4f97365bec6ea61fd, type: 3}
+  cardsCountText: {fileID: 6896623317317632287}
+  cardContainer: {fileID: 0}
+  cards: []
+--- !u!114 &6896623318315049865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8167070442802032253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd3207884192cb4f9d63f2a87c08e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnAwake:
+    _PersistentCalls:
+    - _Target: {fileID: 4394411850822412756}
+      _MethodName: Setup
+      _PersistentArguments: []

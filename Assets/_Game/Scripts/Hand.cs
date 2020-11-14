@@ -7,6 +7,7 @@ public class Hand : MonoBehaviour {
     private void Start () => UpdateChildren();
 
     public void CardSelectionHandler ( Card card ) {
+        UpdateChildren();
         foreach ( var child in children ) {
             if ( child == card.transform ) {
                 card.transform.SetParent( transform.parent );
