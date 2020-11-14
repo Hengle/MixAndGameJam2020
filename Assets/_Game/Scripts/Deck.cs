@@ -42,7 +42,7 @@ public class Deck : MonoBehaviour {
             Card c = Instantiate( cardPrefab, cardContainer.transform );
             c.cardData = cardData;
             c.UpdateUI();
-            this.cards.Add( c );
+            this.cards.InsertInRandomPosition( c );
         }
         UpdateUI();
     }

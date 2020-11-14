@@ -13,6 +13,7 @@ public class NeedBar : MonoBehaviour {
     [Header("Events")]
     public UltEvent<float> OnValueChangePercent;
     public UltEvent<List<SC_Card>> OnUnlock;
+    public UltEvent OnBarEmpty;
 
     private void Start () {
         currentValue = needData.startValue;
@@ -26,7 +27,12 @@ public class NeedBar : MonoBehaviour {
 
     public void Add ( float value ) {
         currentValue += value;
-        OnValueChangePercent.Invoke( currentValue / needData.maxValue );
+        float percent = Mathf.Clamp01( currentValue / needData.maxValue );
+        OnValueChangePercent.Invoke( percent );
+
+        if ( percent <= 0 ) {
+            OnBarEmpty.Invoke();
+        }
     }
 
     public void CardEffectValueChangeHanlder ( SC_NeedBar needData, float amount ) {
