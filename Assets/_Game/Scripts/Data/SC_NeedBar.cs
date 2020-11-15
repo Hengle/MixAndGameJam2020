@@ -11,6 +11,7 @@ public class SC_NeedBar : ScriptableObject {
     public float maxValue = 100f;
     public float startValue = 75f;
     public float softResetLerpPercent = .5f;
+    [Range(0f,1f)] public float warningTresholdPercent = .25f;
 
     [AssetSelector]
     public List<SC_Card> unlockedCards = new List<SC_Card>();

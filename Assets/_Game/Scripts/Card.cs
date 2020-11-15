@@ -7,6 +7,7 @@ using DG.Tweening;
 public class Card : MonoBehaviour {
     [Header("Refs")]
     public SC_Card cardData;
+    public Image cardImage;
     public Image IconImage;
     public Image TextImage;
 
@@ -36,7 +37,7 @@ public class Card : MonoBehaviour {
 
         enter = true;
 
-        transform.DOBlendableLocalMoveBy( Vector3.up * interactionHeight, interactionTime ).Play();
+        //cardImage.transform.DOLocalMoveY( interactionHeight, interactionTime ).Play();
     }
 
     public void Exit () {
@@ -45,8 +46,8 @@ public class Card : MonoBehaviour {
 
         if ( !selected && down )
             Select();
-        else
-            transform.DOBlendableLocalMoveBy( -Vector3.up * interactionHeight, interactionTime ).Play();
+        // else
+        //cardImage.transform.DOLocalMoveY( 0f, interactionTime ).Play();
 
         enter = down = up = false;
     }
@@ -100,6 +101,8 @@ public class Card : MonoBehaviour {
         }
         else {
             enter = up = down = false;
+            //cardImage.transform.DOLocalMoveY( 0f, 0f );
+            //cardImage.transform.DOKill();
         }
     }
 

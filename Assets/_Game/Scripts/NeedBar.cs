@@ -18,6 +18,8 @@ public class NeedBar : MonoBehaviour {
     public UltEvent<List<SC_Card>> OnUnlock;
     public UltEvent OnLock;
     public UltEvent OnBarEmpty;
+    public UltEvent OnWarningStart;
+    public UltEvent OnWarningEnd;
 
     private float _currentValue;
     private float currentValue { get => _currentValue; set => _currentValue = Mathf.Clamp( value, 0f, needData.maxValue ); }
@@ -52,9 +54,16 @@ public class NeedBar : MonoBehaviour {
         currentValue += value;
         UpdateUI();
 
-        if ( currentValue / needData.maxValue <= 0 ) {
+        float percent = Mathf.Clamp01( currentValue / needData.maxValue );
+
+        if ( percent == 0 ) {
             OnBarEmpty.Invoke();
         }
+        else if ( percent <= needData.warningTresholdPercent ) {
+            OnWarningStart.Invoke();
+        }
+        else
+            OnWarningEnd.Invoke();
     }
 
     public void UpdateUI () {

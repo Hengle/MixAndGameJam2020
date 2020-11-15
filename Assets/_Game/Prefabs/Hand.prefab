@@ -55,9 +55,9 @@ MonoBehaviour:
   elementsDistance: 110
   elementWidth: 70
   horizontalSpaceing: 10
-  speed: 2000
+  speed: 3000
   adjustWidth: 0
-  ignoreY: 1
+  ignoreY: 0
 --- !u!114 &1855303161
 MonoBehaviour:
   m_ObjectHideFlags: 0
