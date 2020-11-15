@@ -12,13 +12,15 @@ public class NeedBar : MonoBehaviour {
 
     [Header("Params")]
     [ReadOnly] public bool locked;
-    [ReadOnly] public float currentValue;
     public float fillSpeed = 5f;
 
     [Header("Events")]
     public UltEvent<List<SC_Card>> OnUnlock;
     public UltEvent OnLock;
     public UltEvent OnBarEmpty;
+
+    private float _currentValue;
+    private float currentValue { get => _currentValue; set => _currentValue = Mathf.Clamp( value, 0f, needData.maxValue ); }
 
     private void Start () {
         fillImage.color = needData.color;

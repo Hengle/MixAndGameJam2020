@@ -2,6 +2,7 @@
 using UnityEngine;
 using NaughtyAttributes;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class Card : MonoBehaviour {
     [Header("Refs")]
