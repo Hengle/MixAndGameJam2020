@@ -43,6 +43,7 @@ public class Fatty : MonoBehaviour {
     private void UpdateScale () {
         float targetScale = 1f + weight * scaleMultiplier;
         transform.DOScale( targetScale, scaleAnimDuration ).SetEase( Ease.OutBounce ).Play();
+        transform.DOPunchRotation( Vector3.forward * 15f, scaleAnimDuration, 20 ).Play();
     }
 
     [System.Serializable]
