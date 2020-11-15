@@ -7,6 +7,7 @@ public class Fatty : MonoBehaviour {
     [Header("Params")]
     public FatState[] fatStates;
     public float scaleMultiplier = .1f;
+    public float scaleAnimDuration = .4f;
 
     [Header("Refs")]
     public Image image;
@@ -41,7 +42,7 @@ public class Fatty : MonoBehaviour {
 
     private void UpdateScale () {
         float targetScale = 1f + weight * scaleMultiplier;
-        transform.DOScale( targetScale, .3f ).SetEase( Ease.OutBounce ).Play();
+        transform.DOScale( targetScale, scaleAnimDuration ).SetEase( Ease.OutBounce ).Play();
     }
 
     [System.Serializable]

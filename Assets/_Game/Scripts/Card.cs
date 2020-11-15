@@ -7,7 +7,8 @@ using DG.Tweening;
 public class Card : MonoBehaviour {
     [Header("Refs")]
     public SC_Card cardData;
-    public Image image;
+    public Image IconImage;
+    public Image TextImage;
 
     [Header("Params")]
     public float interactionTime = .2f;
@@ -109,8 +110,10 @@ public class Card : MonoBehaviour {
     }
 
     public void UpdateUI () {
-        if ( image != null )
-            image.sprite = cardData.img;
+        if ( IconImage != null )
+            IconImage.sprite = cardData.iconSprite;
+        if ( TextImage != null )
+            TextImage.sprite = cardData.textSprite;
     }
     #endregion
 
