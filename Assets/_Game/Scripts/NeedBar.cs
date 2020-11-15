@@ -77,6 +77,7 @@ public class NeedBar : MonoBehaviour {
     public void BarUnlockHandler ( NeedBar needBar ) {
         if ( needBar != this ) {
             currentValue = Mathf.Lerp( currentValue, needData.startValue, needData.softResetLerpPercent );
+            UpdateUI();
         }
     }
 }
