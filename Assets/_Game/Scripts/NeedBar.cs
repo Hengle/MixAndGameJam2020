@@ -54,6 +54,9 @@ public class NeedBar : MonoBehaviour {
     }
 
     public void Add ( float value ) {
+        if ( locked )
+            return;
+
         currentValue += value;
         UpdateUI();
 
