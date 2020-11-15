@@ -9,6 +9,10 @@ public class Card : MonoBehaviour {
     public SC_Card cardData;
     public Image image;
 
+    [Header("Params")]
+    public float interactionTime = .2f;
+    public float interactionHeight = 25f;
+
     [Header("Events")]
     public UltEvent<Card> OnSelection;
     public UltEvent<Card> OnDeselection;
@@ -30,6 +34,8 @@ public class Card : MonoBehaviour {
             return;
 
         enter = true;
+
+        transform.DOBlendableLocalMoveBy( Vector3.up * interactionHeight, interactionTime ).Play();
     }
 
     public void Exit () {
@@ -38,6 +44,8 @@ public class Card : MonoBehaviour {
 
         if ( !selected && down )
             Select();
+        else
+            transform.DOBlendableLocalMoveBy( -Vector3.up * interactionHeight, interactionTime ).Play();
 
         enter = down = up = false;
     }
