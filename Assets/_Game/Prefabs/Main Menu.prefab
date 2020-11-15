@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8592227e9c6cf54a8c711d95ad9ace2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   selectMode: 0
   deselectMode: 0
   clickMode: 1
@@ -122,6 +122,17 @@ MonoBehaviour:
     - _Target: {fileID: 0}
       _MethodName: Play
       _PersistentArguments: []
+    - _Target: {fileID: 7701661731631779271}
+      _MethodName: Active
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &7701661732277499553
 GameObject:
   m_ObjectHideFlags: 0
