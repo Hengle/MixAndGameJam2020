@@ -55,7 +55,7 @@ MonoBehaviour:
   elementsDistance: 110
   elementWidth: 150
   horizontalSpaceing: 10
-  speed: 3000
+  speed: 1500
   adjustWidth: 0
   ignoreY: 0
 --- !u!114 &1855303161
