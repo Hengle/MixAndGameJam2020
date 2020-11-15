@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   self: {fileID: 6100849695691283645}
   elementsDistance: 110
-  elementWidth: 70
+  elementWidth: 150
   horizontalSpaceing: 10
   speed: 3000
   adjustWidth: 0
