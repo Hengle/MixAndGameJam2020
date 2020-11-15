@@ -1631,10 +1631,6 @@ PrefabInstance:
       propertyPath: OnButtonClick._PersistentCalls.Array.data[0]._Target
       value: 
       objectReference: {fileID: 854679033}
-    - target: {fileID: 7701661731631779271, guid: 1dc033ce594a2a643b98741b2e426f77, type: 3}
-      propertyPath: OnButtonClick._PersistentCalls.Array.data[0]._MethodName
-      value: Play
-      objectReference: {fileID: 0}
     - target: {fileID: 7701661732527946074, guid: 1dc033ce594a2a643b98741b2e426f77, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
