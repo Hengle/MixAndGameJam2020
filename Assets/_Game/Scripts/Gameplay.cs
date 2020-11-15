@@ -8,6 +8,7 @@ public class Gameplay : MonoBehaviour {
     public Hand hand;
 
     [Header("Events")]
+    public UltEvent OnDraw;
     public UltEvent OnDrawRoutineEnd;
 
     public void Draw () {
@@ -16,6 +17,7 @@ public class Gameplay : MonoBehaviour {
         c.Activate( true );
 
         deck.UpdateUI();
+        OnDraw.Invoke();
     }
 
     public void Draw ( int amount ) {

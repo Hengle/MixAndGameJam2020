@@ -202,6 +202,9 @@ MonoBehaviour:
     - _Target: {fileID: 7810906322047351729}
       _MethodName: Enter
       _PersistentArguments: []
+    - _Target: {fileID: 11400000, guid: a6afcae69d1a44d4fa3ba696e43c2ad7, type: 2}
+      _MethodName: Invoke
+      _PersistentArguments: []
   OnMouseExit:
     _PersistentCalls:
     - _Target: {fileID: 7810906322047351729}
