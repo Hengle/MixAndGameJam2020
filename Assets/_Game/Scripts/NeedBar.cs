@@ -9,6 +9,7 @@ public class NeedBar : MonoBehaviour {
     [Header("Refs")]
     public SC_NeedBar needData;
     public Image fillImage;
+    public Image eyeImage;
     public Slider slider;
 
     [Header("Params")]
@@ -27,6 +28,7 @@ public class NeedBar : MonoBehaviour {
 
     private void Start () {
         fillImage.color = needData.color;
+        eyeImage.color = needData.color;
         slider.value = 0f;
 
         if ( needData.startsLocked )
