@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14382c0849a27d641acb194442e3011a, type: 3}
   m_Name: Need A - Red
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.53454506, b: 0.3915094, a: 1}
+  color: {r: 1, g: 0.49803925, b: 0.46274513, a: 1}
   startsLocked: 0
   unlockWeight: 0
   maxValue: 100

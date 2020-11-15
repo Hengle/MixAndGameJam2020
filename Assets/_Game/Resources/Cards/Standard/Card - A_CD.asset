@@ -115,5 +115,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  img: {fileID: 21300000, guid: 88cee2ea7e6ab9a40bf9d5c453950292, type: 3}
+  iconSprite: {fileID: 0}
+  textSprite: {fileID: 21300000, guid: e2c40f2498178cd44917d48b96fc079f, type: 3}
   weight: 1

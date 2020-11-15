@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14382c0849a27d641acb194442e3011a, type: 3}
   m_Name: Need F - Purple
   m_EditorClassIdentifier: 
-  color: {r: 0.9150943, g: 0.4538473, b: 0.8935501, a: 1}
+  color: {r: 1, g: 0.46274513, b: 0.9843138, a: 1}
   startsLocked: 1
   unlockWeight: 40
   maxValue: 100

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14382c0849a27d641acb194442e3011a, type: 3}
-  m_Name: Need E - Blue
+  m_Name: Need E - Yellow
   m_EditorClassIdentifier: 
-  color: {r: 0.45859745, g: 0.455017, b: 0.8679245, a: 1}
+  color: {r: 1, g: 0.9372549, b: 0.45490196, a: 1}
   startsLocked: 1
   unlockWeight: 25
   maxValue: 100
