@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d81e05ecbc83bc346a1e8c13d6868bd9, type: 3}
-  m_Name: Level Selection Conf
+  m_Name: SingletonAsset_CreatedBySystem
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 2
+    SerializedFormat: 0
     SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
@@ -21,6 +21,6 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  createdBySystem: 0
+  createdBySystem: 1
   excludeFromLoading: 0
   autoAddAllLevelInAllWorldsOnBuild: 1
