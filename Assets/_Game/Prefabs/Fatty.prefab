@@ -88,7 +88,7 @@ MonoBehaviour:
   fatStates:
   - unlockWeight: 20
     sprite: {fileID: 21300000, guid: 8accafedbfd13bb42b26fa0e9b4056db, type: 3}
-  scaleMultiplier: 0.05
+  scaleMultiplier: 0.025
   image: {fileID: 5832820619721334423}
   OnFatStateChange:
     _PersistentCalls: []

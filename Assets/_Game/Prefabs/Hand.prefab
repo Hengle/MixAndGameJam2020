@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 6100849695691283645}
-  elementsDistance: 90
+  elementsDistance: 110
   elementWidth: 70
   horizontalSpaceing: 10
   speed: 2000

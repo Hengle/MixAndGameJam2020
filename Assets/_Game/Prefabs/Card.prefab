@@ -171,7 +171,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 160}
+  m_SizeDelta: {x: 200, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &966521343446921411
 CanvasRenderer:
@@ -233,8 +233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardData: {fileID: 0}
   image: {fileID: 966521342107683423}
-  interactionTime: 0.2
-  interactionHeight: 45
+  interactionTime: 0.1
+  interactionHeight: 70
   OnSelection:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 90bb001243f0f90428ab09f3a33a8dd5, type: 2}

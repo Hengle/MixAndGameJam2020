@@ -103,6 +103,7 @@ public class Card : MonoBehaviour {
     }
 
     public void Use () {
+        transform.DOKill();
         selected = false;
         OnUse.Invoke( this );
     }

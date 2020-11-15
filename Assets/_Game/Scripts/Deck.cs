@@ -2,6 +2,7 @@
 using UnityEngine;
 using TMPro;
 using NaughtyAttributes;
+using DG.Tweening;
 
 public class Deck : MonoBehaviour {
     [Header("Refs")]
