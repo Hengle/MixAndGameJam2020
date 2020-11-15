@@ -30,7 +30,7 @@ public class Gameplay : MonoBehaviour {
 
     public void CardUseHandler ( Card card ) {
         //shuffle used card in deck
-        deck.cards.InsertInRandomPosition( card, 1 );
+        deck.cards.InsertInRandomPosition( card, 2 );
         deck.Add( card );
         //draw new one
         Draw();

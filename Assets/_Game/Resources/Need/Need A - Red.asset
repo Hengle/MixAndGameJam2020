@@ -16,7 +16,8 @@ MonoBehaviour:
   startsLocked: 0
   unlockWeight: 0
   maxValue: 100
-  startValue: 75
+  startValue: 50
+  softResetLerpPercent: 0
   unlockedCards:
   - {fileID: 11400000, guid: b59428309a0312046a08b006f56ea82d, type: 2}
   - {fileID: 11400000, guid: d05be6659d9679c4c9631a91e51a5cd8, type: 2}

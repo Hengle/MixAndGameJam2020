@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: {r: 0.4401795, g: 0.8247549, b: 0.8396226, a: 1}
   startsLocked: 1
-  unlockWeight: 20
+  unlockWeight: 10
   maxValue: 100
   startValue: 75
+  softResetLerpPercent: 0
   unlockedCards:
   - {fileID: 11400000, guid: e5fa300f4d41e9446beed6282b540de5, type: 2}
   - {fileID: 11400000, guid: 1a78cdb4c36448a4ca3a82de12b44176, type: 2}

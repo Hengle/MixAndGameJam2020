@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: {r: 0.45859745, g: 0.455017, b: 0.8679245, a: 1}
   startsLocked: 1
-  unlockWeight: 9999
+  unlockWeight: 25
   maxValue: 100
   startValue: 75
+  softResetLerpPercent: 0
   unlockedCards: []
