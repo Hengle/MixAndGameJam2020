@@ -2016,26 +2016,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 986392138}
     m_Modifications:
-    - target: {fileID: 1584066772494473506, guid: 4db7e5f6ae229d14b868ccc2b58ea87a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1584066772494473506, guid: 4db7e5f6ae229d14b868ccc2b58ea87a, type: 3}
-      propertyPath: endValueV3.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1584066772494473506, guid: 4db7e5f6ae229d14b868ccc2b58ea87a, type: 3}
-      propertyPath: endValueV3.y
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1584066772494473506, guid: 4db7e5f6ae229d14b868ccc2b58ea87a, type: 3}
-      propertyPath: endValueV3.z
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1584066772494473516, guid: 4db7e5f6ae229d14b868ccc2b58ea87a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1584066772494473517, guid: 4db7e5f6ae229d14b868ccc2b58ea87a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2066,11 +2046,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1584066772494473517, guid: 4db7e5f6ae229d14b868ccc2b58ea87a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 524.38477
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 1584066772494473517, guid: 4db7e5f6ae229d14b868ccc2b58ea87a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 434.55518
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 1584066772494473517, guid: 4db7e5f6ae229d14b868ccc2b58ea87a, type: 3}
       propertyPath: m_LocalPosition.x
