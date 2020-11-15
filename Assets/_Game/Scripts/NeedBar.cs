@@ -9,6 +9,7 @@ public class NeedBar : MonoBehaviour {
     [Header("Refs")]
     public SC_NeedBar needData;
     public Image fillImage;
+    public Slider slider;
 
     [Header("Params")]
     [ReadOnly] public bool locked;
@@ -26,7 +27,7 @@ public class NeedBar : MonoBehaviour {
 
     private void Start () {
         fillImage.color = needData.color;
-        fillImage.fillAmount = 0f;
+        slider.value = 0f;
 
         if ( needData.startsLocked )
             Lock();
@@ -68,7 +69,7 @@ public class NeedBar : MonoBehaviour {
 
     public void UpdateUI () {
         float percent = currentValue / needData.maxValue;
-        fillImage.DOFillAmount( percent, fillSpeed ).SetSpeedBased().Play();
+        slider.DOValue( percent, fillSpeed ).SetSpeedBased().Play();
     }
 
     public void CardEffectValueChangeHanlder ( SC_NeedBar needData, float amount ) {
